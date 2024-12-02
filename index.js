@@ -4,12 +4,12 @@ function createElementWithAttributes(tag, attributes) {
 }
 
 function createDynamicTable() {
-    const outerDiv = document.createElement("div");
+    let outerDiv = document.createElement("div");
     outerDiv.classList.add('outer-container');
 
-    const innerDiv = createElementWithAttributes("div", { class: "inner-container" });
+    let innerDiv = createElementWithAttributes("div", { class: "inner-container" });
 
-    const table = createElementWithAttributes("table", { class: "dynamic-table", border: "1" });
+    let table = createElementWithAttributes("table", { class: "dynamic-table", border: "1" });
 
     const thead = createElementWithAttributes("thead", { class: "table-header" });
     const headerRow = createElementWithAttributes("tr", { class: "header-row" });
