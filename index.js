@@ -48,10 +48,10 @@ function createDynamicTable() {
     outerDiv = null
 }
 
-document.getElementById('adddyn').addEventListener('click', () => {
+document.getElementById('create').addEventListener('click', () => {
     createDynamicTable();
 });
 
-document.getElementById('destroydyn').addEventListener('click', () => {
+document.getElementById('destroy').addEventListener('click', () => {
     document.querySelector('.outer-container').innerHTML = '';
 });
